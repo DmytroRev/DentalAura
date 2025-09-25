@@ -1,0 +1,10 @@
+*:focus {
+  outline: none;
+}
+
+//for FireFox
+::-moz-focus-inner,
+::-moz-focus-outer {
+  border: 0;
+  outline: none;
+}

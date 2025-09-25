@@ -1,0 +1,12 @@
+@import "components/normalize";
+@import "components/variables";
+@import "components/mixins";
+@import "components/default";
+@import "components/typo";
+
+@import 'components/contact.scss';
+@import 'components/prices.scss';
+@import 'components/services.scss';
+
+@import "pages/privacy-policy";
+@import "pages/terms-and-conditions";
