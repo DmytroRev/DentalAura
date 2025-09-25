@@ -4,9 +4,17 @@
 @import "components/default";
 @import "components/typo";
 
-@import 'components/contact.scss';
-@import 'components/prices.scss';
-@import 'components/services.scss';
+@import 'components/header.scss';
+@import 'components/hero.scss';
+@import 'components/about.scss';
+@import 'components/technology.scss';
+@import 'components/gallery.scss';
+@import 'components/buttons.scss';
+@import 'components/logo.scss';
+@import 'components/footer.scss';
 
 @import "pages/privacy-policy";
 @import "pages/terms-and-conditions";
+@import 'pages/services.scss';
+@import 'pages/prices.scss';
+@import 'pages/contact.scss';
