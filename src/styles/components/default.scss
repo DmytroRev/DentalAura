@@ -1,13 +1,8 @@
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
-
-
 
 body {
   font-family: "CircularStd", sans-serif;
@@ -16,7 +11,6 @@ body {
   background-color: var(--light-color);
   overflow-x: hidden;
 }
-
 
 p {
   margin-bottom: 1.5rem;
@@ -73,7 +67,6 @@ section {
 .section-divider.reverse::after {
   clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 100%);
 }
-
 
 /* Contact section */
 .contact {
@@ -219,7 +212,6 @@ textarea.form-control {
 
 /* Footer */
 
-
 /* Modal */
 .modal-overlay {
   position: fixed;
@@ -303,100 +295,8 @@ textarea.form-control {
   font-size: 1.1rem;
 }
 
-/* Animations */
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.8;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-pulse {
-  animation: pulse 3s infinite;
-}
-
-.animate-fadeInUp {
-  animation: fadeInUp 0.8s ease forwards;
-}
-
-.animate-fadeInLeft {
-  animation: fadeInLeft 0.8s ease forwards;
-}
-
-.animate-fadeInRight {
-  animation: fadeInRight 0.8s ease forwards;
-}
-
-.delay-200 {
-  animation-delay: 0.2s;
-}
-
-.delay-400 {
-  animation-delay: 0.4s;
-}
-
-.delay-600 {
-  animation-delay: 0.6s;
-}
-
-/* Responsive styles */
 @media (min-width: 1200px) {
   .team-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -412,7 +312,7 @@ textarea.form-control {
     width: 45%;
   }
 
-  .info-card  {
+  .info-card {
     flex-direction: row;
   }
 
@@ -443,7 +343,6 @@ textarea.form-control {
     padding: 80px 0;
   }
 
-
   .hero-content::before {
     left: 50%;
     transform: translateX(-50%);
@@ -455,19 +354,6 @@ textarea.form-control {
 
   .hero-image-container {
     margin-top: 50px;
-  }
-
-  .about-container {
-    grid-template-columns: 1fr;
-  }
-
-  .about-image-grid {
-    order: 2;
-    margin-top: 50px;
-  }
-
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .technology-container {
@@ -507,47 +393,9 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 80%;
-    max-width: 400px;
-    height: 100vh;
-    background-color: white;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: var(--transition);
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-
-  .nav-menu.active {
-    right: 0;
-  }
-
-  .nav-menu li {
-    margin: 20px 0;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-features {
-    grid-template-columns: 1fr;
-  }
 
   .team-grid {
     grid-template-columns: 1fr;
-  }
-
-  .gallery-grid {
   }
 
   .footer-container {

@@ -1,11 +1,24 @@
-@mixin tablet() {
-  @media screen and (min-width: 768px) {
-    @content;
-  }
-}
+$sizes: (
+  "xs": 320px,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
 
-@mixin desktop() {
-  @media screen and (min-width: 1024px) {
-    @content;
+@mixin media($minmax, $media) {
+  @each $size, $resolution in $sizes {
+    @if $media ==$size {
+      @if $minmax == "max" {
+        $maxResolution: $resolution - 1px;
+        @media only screen and (max-width: $maxResolution) {
+          @content;
+        }
+      } @else {
+        @media only screen and (#{$minmax}-width: $resolution) {
+          @content;
+        }
+      }
+    }
   }
 }
