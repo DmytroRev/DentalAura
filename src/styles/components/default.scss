@@ -210,8 +210,6 @@ textarea.form-control {
   color: var(--secondary-color);
 }
 
-/* Footer */
-
 /* Modal */
 .modal-overlay {
   position: fixed;
@@ -295,8 +293,6 @@ textarea.form-control {
   font-size: 1.1rem;
 }
 
-
-
 @media (min-width: 1200px) {
   .team-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -356,9 +352,7 @@ textarea.form-control {
     margin-top: 50px;
   }
 
-  .technology-container {
-    grid-template-columns: 1fr;
-  }
+
 
   .technology-image {
     order: 2;
@@ -393,7 +387,6 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
-
   .team-grid {
     grid-template-columns: 1fr;
   }
